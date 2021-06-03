@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock/Paper/Scissors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -13,26 +15,27 @@
     <p></p>
     <input type="reset" value="Play Again">
 
-    <h1>Result</h1>
-    <div id="game">
 
+    <div id="game">
+        <h1>Result</h1>
         <h2 id="pScore">Player Score:</h2>
         <h2 id="cScore">Computer Score:</h2>
         <div id="pPic"></div>
+
         <div id="cPic"></div>
     </div>
 
     <div class="pics">
         <div id="rock">
-            <img src="pic/rock.jpg" alt="" id="r">
+            <img src="pic/rock.jpg" alt="" id="r" data-set="Rock">
             <p>Rock</p>
         </div>
         <div id="paper">
-            <img src="pic/paper.png" alt="" id="p">
+            <img src="pic/paper.png" alt="" id="p" data-set="Paper">
             <p>Paper</p>
         </div>
         <div id="scissors">
-            <img src="pic/scissors.jpg" alt="" id="s">
+            <img src="pic/scissors.jpg" alt="" id="s" data-set="Scissors">
             <p>Scissors</p>
         </div>
 
