@@ -12,16 +12,37 @@
 <body>
     <p></p>
     <input type="reset" value="Play Again">
-    <div>
 
-        <h1>Result</h1>
-        <h2>Player Score:</h2>
-        <h3>Computer Score:</h3>
-        <button id="r">Rock</button>
-        <button id='p'>Paper</button>
-        <button id="s">Scissors</button>
+    <h1>Result</h1>
+    <div id="game">
+
+        <h2 id="pScore">Player Score:</h2>
+        <h2 id="cScore">Computer Score:</h2>
+        <div id="pPic"></div>
+        <div id="cPic"></div>
+    </div>
+
+    <div class="pics">
+        <div id="rock">
+            <img src="pic/rock.jpg" alt="" id="r">
+            <p>Rock</p>
+        </div>
+        <div id="paper">
+            <img src="pic/paper.png" alt="" id="p">
+            <p>Paper</p>
+        </div>
+        <div id="scissors">
+            <img src="pic/scissors.jpg" alt="" id="s">
+            <p>Scissors</p>
+        </div>
 
     </div>
+
+    <!-- <button id="r">Rock</button>
+        <button id='p'>Paper</button>
+        <button id="s">Scissors</button> -->
+
+
 
     <script src="app.js"></script>
 </body>

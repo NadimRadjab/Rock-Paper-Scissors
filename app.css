@@ -2,15 +2,52 @@ body{
     margin: 50px;
     text-align: center;
 }
-
-.opacity{
-    opacity: 0.1;
+.pics{
+    max-width: 2000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
 }
+.pics>div{
+margin: 15px;
+    
+}
+#game{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid black;
+   max-width: 2000px;
+   height: 300px;
+   justify-items: center;
+   /* grid-auto-rows: minmax(100px, auto); */
+
+}
+#game>div{
+    display: grid;
+    width: 210px;
+    height: 210px;
+    border: 2px solid black;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+.test{
+    display: grid;
+    width: 210px;
+    height: 210px;
+    border: 2px solid black;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+/* .opacity{
+    opacity: 0.1;
+} */
 .display{
     display: none;
 }
 p{
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -23,4 +60,8 @@ button{
     width: 80px;
     height: 50px;
 }
+img{
+
+}
+
 
