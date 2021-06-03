@@ -1,8 +1,11 @@
 body{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     text-align: center;
     font-family: 'Sigmar One', cursive;
     color: #141b0cd0;
+    max-width: 2000px;
     
 }
 #title{
@@ -44,25 +47,17 @@ margin: 15px;
 
 }
 #game>div{
-    display: grid;
     width: 210px;
     height: 210px;
 
 }
 
-.display{
-    display: none;
-}
 p{
     color: #1b4332;
     font-size: 20px;
    
 }
 
-input{
-    height: 70px;
-    width: 80px;
-}
 button{
     font-family: 'Sigmar One', cursive;
     margin: 10px;
@@ -117,4 +112,30 @@ img{
 color: green;
     width: 70% ;
     height: auto;
+}
+@media (max-width: 500px) {
+h1{
+    font-size: 15px;
+}
+h2{
+    font-size: 12px;
+}
+h3{
+    font-size: 10px;
+}
+button{
+    font-size: 10px;
+}
+#game>div{
+    width: 55px;
+    height: 55px; 
+}
+img{
+    width: 45px;
+    height: 45px;
+}
+.pics{
+    height: 430px;
+}
+
 }
