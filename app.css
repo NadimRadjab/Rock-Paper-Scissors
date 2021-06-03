@@ -1,14 +1,25 @@
 body{
-    margin: 5px;
+    margin: 0;
     text-align: center;
+    font-family: 'Sigmar One', cursive;
+    color: #141b0cd0;
+    
 }
-.pics{
-    max-width: 2000px;
-    height: 500px;
+#title{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    height: 200px;
+    max-width: 2000px;
+    background-color: #95d5b2;
+    border-bottom: 3px solid black;
+}
+.pics{
+    max-width: 2000px;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #d8f3dc;
 }
 
@@ -25,7 +36,7 @@ margin: 15px;
 #game{
     display: grid;
     grid-template-columns: repeat(3, 1fr );
-    border: 2px solid black;
+    border-bottom: 5px solid black;
    max-width: 2000px;
    justify-items: center;
    grid-auto-columns: minmax(100px, auto);
@@ -43,8 +54,9 @@ margin: 15px;
     display: none;
 }
 p{
+    color: #1b4332;
     font-size: 20px;
-    font-weight: bold;
+   
 }
 
 input{
@@ -52,16 +64,34 @@ input{
     width: 80px;
 }
 button{
-    margin: 20px;
-    width: 80px;
-    height: 50px;
+    font-family: 'Sigmar One', cursive;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #141b0cd0;
+    background-color: #49996d;
+    border: none;
+    border-radius: 15px;
+    
 }
-img{
-
+button:active{
+      
+    transform: translateY(4px);
 }
 h1{
-   grid-column: 2/2; 
-   grid-row: 2/2;
+    font-size: 45px;
+}
+
+h2{
+    font-size: 35px;
+   grid-column: 2; 
+   grid-row: 4/3;
+}
+h3{
+    font-size: 28px;
 }
 #pScore{
     grid-column: 1/2; 
@@ -79,4 +109,12 @@ h1{
 #pPic{
     grid-column: 1/1; 
     grid-row: 3/3;
+}
+.Restart{
+    background-color: #d8f3dc;
+}
+img{
+color: green;
+    width: 70% ;
+    height: auto;
 }
